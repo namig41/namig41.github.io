@@ -1,0 +1,327 @@
+/**
+ * Современные стили — обновление дизайна
+ * Цветовая схема: тёмная основа + бирюзовый акцент
+ */
+
+:root {
+	--color-bg: #0f0f0f;
+	--color-bg-card: #1a1a1a;
+	--color-bg-elevated: #242424;
+	--color-surface: #ebebeb;
+	--color-text: #e5e5e5;
+	--color-text-muted: #a3a3a3;
+	--color-accent: #14b8a6;
+	--color-accent-hover: #0d9488;
+	--color-accent-soft: rgba(20, 184, 166, 0.15);
+	--radius-sm: 8px;
+	--radius-md: 12px;
+	--radius-lg: 20px;
+	--radius-full: 9999px;
+	--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+	--shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
+	--shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.4);
+	--transition: 0.2s ease;
+}
+
+/* Плавная прокрутка */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--color-bg);
+	color: var(--color-text-muted);
+}
+
+a, a:visited {
+	color: var(--color-text);
+}
+a:hover, a:focus, a:active {
+	color: var(--color-accent);
+}
+
+/* Типографика */
+h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
+	color: var(--color-text);
+}
+
+/* Preloader */
+#preloader {
+	background: var(--color-bg);
+}
+#loader:before {
+	border-left-color: var(--color-accent);
+}
+
+.pace .pace-progress {
+	background: var(--color-accent);
+}
+
+/* Header — стеклянный эффект */
+header .top-bar {
+	background: rgba(15, 15, 15, 0.85);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	min-height: 64px;
+}
+
+header .logo a {
+	background-size: contain;
+}
+
+.menu-toggle span,
+.menu-toggle span::before,
+.menu-toggle span::after {
+	background-color: var(--color-accent);
+}
+.menu-toggle.is-clicked span::before,
+.menu-toggle.is-clicked span::after {
+	background-color: var(--color-accent);
+}
+
+.main-navigation {
+	background: rgba(15, 15, 15, 0.98);
+	backdrop-filter: blur(12px);
+}
+.main-navigation li a:hover {
+	color: var(--color-accent);
+}
+.main-navigation li.current > a {
+	color: var(--color-accent);
+}
+
+/* Intro — градиент и акцент */
+#intro {
+	background: var(--color-bg) linear-gradient(180deg, rgba(20, 184, 166, 0.08) 0%, transparent 50%) no-repeat center bottom;
+}
+
+.intro-overlay {
+	background: rgba(10, 10, 10, 0.75);
+}
+
+.intro-content h1 {
+	color: var(--color-text);
+	letter-spacing: -0.02em;
+	font-weight: 600;
+}
+
+.intro-content .intro-position {
+	color: var(--color-text-muted);
+}
+.intro-content .intro-position span::after,
+.intro-content .intro-position span:first-child::before {
+	color: rgba(255, 255, 255, 0.2);
+}
+
+.intro-content .button {
+	border-color: rgba(255, 255, 255, 0.25);
+	color: var(--color-text) !important;
+	border-radius: var(--radius-full);
+	padding: 0 2rem 0 2rem !important;
+	height: 3.2rem !important;
+	line-height: 3rem !important;
+}
+.intro-content .button:hover, .intro-content .button:focus {
+	border-color: var(--color-accent);
+	color: var(--color-accent) !important;
+}
+
+/* Секции */
+.section-intro h5 {
+	color: var(--color-accent);
+	letter-spacing: 0.2em;
+}
+
+/* About */
+#about {
+	background: var(--color-bg-card);
+	padding-top: 10rem;
+	padding-bottom: 12rem;
+}
+
+.intro-info img {
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow-lg);
+	border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.about-content .info-list li strong {
+	color: var(--color-text);
+}
+.about-content .info-list li span {
+	color: var(--color-text-muted);
+}
+
+/* Skill bars — градиент и скругление */
+.skill-bars li {
+	background: var(--color-bg-elevated);
+	border-radius: var(--radius-full);
+	height: 8px;
+	overflow: hidden;
+}
+.skill-bars li .progress {
+	background: linear-gradient(90deg, var(--color-accent-hover), var(--color-accent));
+	border-radius: var(--radius-full);
+}
+.skill-bars li strong {
+	color: var(--color-text);
+}
+.skill-bars li .progress span {
+	background: var(--color-bg-elevated);
+	color: var(--color-accent);
+	border: 1px solid rgba(20, 184, 166, 0.3);
+	border-radius: var(--radius-sm);
+}
+
+/* Кнопки */
+.button, a.button, button, input[type="submit"] {
+	border-radius: var(--radius-md);
+	transition: transform var(--transition), box-shadow var(--transition);
+}
+.button:hover, a.button:hover, button:hover, input[type="submit"]:hover {
+	transform: translateY(-1px);
+	box-shadow: var(--shadow-md);
+}
+
+.button.stroke, .button.stroke {
+	border: 2px solid var(--color-text-muted);
+}
+.button.stroke:hover, .button.stroke:hover {
+	border-color: var(--color-accent);
+	color: var(--color-accent);
+}
+
+.button.button-primary, a.button.button-primary {
+	background: var(--color-accent);
+	color: #fff;
+}
+.button.button-primary:hover, a.button.button-primary:hover {
+	background: var(--color-accent-hover);
+}
+
+.button-section .button {
+	border-radius: var(--radius-md);
+}
+
+/* Grey section (Work) */
+.grey-section {
+	background: var(--color-surface);
+}
+.grey-section .about-content h3,
+#Work .timeline-content h3,
+#Work .timeline-content h4 {
+	color: #1a1a1a;
+}
+#Work .timeline-ico, #resume .timeline-ico {
+	background: var(--color-accent);
+	box-shadow: 0 0 0 4px var(--color-accent-soft);
+}
+#Work .resume-header h2, #resume .resume-header h2 {
+	color: var(--color-accent);
+}
+
+/* Services (MORE) */
+#MORE, #services {
+	background: var(--color-bg-card);
+}
+#MORE .overlay, #services .overlay {
+	background: var(--color-bg);
+	opacity: 0.92;
+}
+#MORE .section-intro h5, #services .section-intro h5 {
+	color: var(--color-accent);
+}
+.services-list .icon i {
+	color: var(--color-accent);
+}
+.services-list .service {
+	background: var(--color-bg-elevated);
+	border-radius: var(--radius-md);
+	padding: 2rem 1.5rem;
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	transition: border-color var(--transition), box-shadow var(--transition);
+}
+.services-list .service:hover {
+	border-color: rgba(20, 184, 166, 0.3);
+	box-shadow: var(--shadow-md);
+}
+.owl-theme .owl-controls .owl-page.active span {
+	background: var(--color-accent);
+}
+
+/* Contact */
+#contact {
+	background: var(--color-bg);
+}
+#contact .section-intro h1 {
+	color: var(--color-text);
+}
+#contact .section-intro h5 {
+	color: var(--color-accent);
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+	border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+	border-color: var(--color-accent);
+	color: var(--color-text);
+}
+
+#contact input[type="submit"] {
+	background: var(--color-accent);
+	border-radius: var(--radius-md);
+	border: none;
+}
+#contact input[type="submit"]:hover {
+	background: var(--color-accent-hover);
+}
+
+#message-success {
+	color: var(--color-accent);
+}
+.contact-info .icon i {
+	color: var(--color-accent);
+}
+.contact-info h5 {
+	color: var(--color-accent);
+}
+
+/* Forms — общие поля */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+	border-color: var(--color-accent);
+}
+
+/* Footer */
+footer a:hover, footer a:focus {
+	color: var(--color-accent);
+}
+
+#go-top a {
+	background: var(--color-accent);
+	border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+#go-top a:hover {
+	background: var(--color-accent-hover);
+}
+
+/* Списки с точками */
+ul.disc li::before {
+	background: var(--color-accent);
+}
+
+/* Блоки кода/ссылки в тексте */
+#about a, #Work a, .timeline-content a {
+	color: var(--color-accent);
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-color var(--transition);
+}
+#about a:hover, #Work a:hover, .timeline-content a:hover {
+	border-bottom-color: var(--color-accent);
+}
