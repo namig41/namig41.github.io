@@ -1,390 +1,661 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]>
-<html class="no-js oldie ie8" lang="en">
-	<![endif]-->
-<!--[if IE 9 ]>
-	<html class="no-js oldie ie9" lang="en">
-		<![endif]-->
-<!--[if (gte IE 9)|!(IE)]>
-		<!-->
-<html class="no-js" lang="en">
-    <!--
-			<![endif]-->
-    <head>
-        <!--- basic page needs
-   ================================================== -->
-        <meta charset="utf-8">
-        <title>CVGUSEINOV</title>
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <!-- mobile specific metas
-   ================================================== -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <!-- CSS
-   ================================================== -->
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/modern.css">
-        <link rel="stylesheet" href="css/vendor.css">
-        <!-- script
-   ================================================== -->
-        <script src="js/modernizr.js"></script>
-        <script src="js/pace.min.js"></script>
-        <!-- favicons
-	================================================== -->
-        <link rel="icon" type="image/png" href="images/portfolio-logo.png">
-    </head>
-    <body id="top">
-        <!-- header
-   ================================================== -->
-        <header>
-            <div class="row">
-                <div class="top-bar">
-                    <a class="menu-toggle" href="#">
-                        <span>Menu</span>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гусейнов Намиг | Python Back-end Developer</title>
+    <meta name="description" content="Портфолио Python Back-end разработчика Гусейнова Намига">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/portfolio-logo.png">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>GUSEINOV<span class="logo-bracket">/&gt;</span>
+            </a>
+            <button class="nav-toggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">О себе</a></li>
+                <li><a href="#skills" class="nav-link">Навыки</a></li>
+                <li><a href="#experience" class="nav-link">Опыт</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#contact" class="nav-link btn-contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Главный экран -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb gradient-orb-1"></div>
+            <div class="gradient-orb gradient-orb-2"></div>
+            <div class="gradient-orb gradient-orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Привет, меня зовут</p>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Гусейнов Намиг</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text">Senior Python Developer</span>
+                </div>
+                <p class="hero-description">
+                    Разрабатываю масштабируемые backend-решения на Python.
+                    Специализируюсь на создании API, микросервисов и высоконагруженных систем.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i> Мои проекты
                     </a>
-                    <div class="logo">
-                        <a href="index.html">GUSEINOV</a>
-                    </div>
-                    <nav id="main-nav-wrap">
-                        <ul class="main-navigation">
-                            <li class="current">
-                                <a class="smoothscroll" href="#intro" title="">Главная</a>
-                            </li>
-                            <li>
-                                <a class="smoothscroll" href="#about" title="">О себе</a>
-                            </li>
-                            <li>
-                                <a class="smoothscroll" href="#Work" title="">Опыт работы</a>
-                            </li>
-                            <li>
-                                <a class="smoothscroll" href="#MORE" title="">Дополнительно</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <a href="https://raw.githubusercontent.com/namig41/namig41.github.io/main/images/CV_Guseinov_Namig.pdf" 
+                       download="CV_Guseinov_Namig.pdf" 
+                       class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Скачать CV
+                    </a>
                 </div>
-                <!-- /top-bar -->
-            </div>
-            <!-- /row -->
-        </header>
-        <!-- /header -->
-        <!-- intro section
-   ================================================== -->
-        <section id="intro">
-            <div class="intro-overlay"></div>
-            <div class="intro-content">
-                <div class="row">
-                    <div class="col-twelve">
-                        <h1>Гусейнов Намиг</h1>
-                        <p class="intro-position">
-                            <span>Python Back-end Developer</span>
-                        </p>
-                        <a class="button stroke smoothscroll" href="#about" title="">Узнать больше</a>
-                    </div>
+                <div class="hero-social">
+                    <a href="https://github.com/namig41" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://hh.ru/applicant/resumes/view?resume=d8e85e5aff0d9834b70039ed1f4b5549383071" target="_blank" aria-label="HeadHunter">
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+                    <a href="mailto:guseinovnamig41@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
-            <!-- /intro-content -->
-        </section>
-        <!-- /intro -->
-        <!-- about section
-   ================================================== -->
-        <section id="about">
-            <div class="row section-intro">
-                <div class="col-twelve">
-                    <h5>О себе</h5>
-                    <div class="intro-info">
-                        <img src="images/me.jpg" alt="Profile Picture">
-                        <p class="lead"></p>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-border"></div>
+                    <img src="images/me.jpg" alt="Гусейнов Намиг" class="profile-image">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="scroll-text">Листайте вниз</div>
+        </div>
+    </section>
+
+    <!-- О себе -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span> О себе
+            </h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-card">
+                        <img src="images/me.jpg" alt="Гусейнов Намиг">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        Привет! Меня зовут Намиг, я Senior Python Back-end разработчик из Москвы с опытом более 6 лет. 
+                        Специализируюсь на проектировании систем для асинхронной обработки данных и масштабирования.
+                    </p>
+                    <p>
+                        Мне нравится работать с базами данных, оптимизировать производительность и писать тесты. 
+                        Активно использую Docker и Git, уверенно работаю в Linux-средах. 
+                        Люблю осваивать новые технологии и решать сложные задачи.
+                    </p>
+                    <p>
+                        Обладаю сильными аналитическими навыками, коммуникабельностью и умением организовывать свое время. 
+                        Быстро осваиваю новые технологии и эффективно адаптируюсь к изменениям.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <strong>Имя:</strong> Гусейнов Намиг
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <strong>Дата рождения:</strong> 12.07.1999
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong> guseinovnamig41@gmail.com
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Адрес:</strong> Москва, м. Домодедовская
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Телефон:</strong> +7 (985) 355-79-73
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- /section-intro -->
-            <div class="row about-content">
-                <div class="col-six tab-full">
-                    <h3> Контакты </h3>
-                    <ul class="info-list">
-                        <li>
-                            <strong>Фамилия и имя:</strong>
-                            <span>Гусейнов Намиг</span>
-                        </li>
-                        <li>
-                            <strong>Дата рождения:</strong>
-                            <span>12.07.1999</span>
-                        </li>
-                        <li>
-                            <strong>Почта:</strong>
-                            <span>guseinovnamig41@gmail.com</span>
-                        </li>
-                        <li>
-                            <strong>Адрес:</strong>
-                            <span>Метро Домодедовская, улица Шипиловская</span>
-                        </li>
-                        <li>
-                            <strong>Телефон:</strong>
-                            <span> +7 (985) 355-79-73 </span>
-                        </li>
-                    </ul>
-                    <!-- /info-list -->
-                </div>
-                <div class="col-six tab-full">
-                    <h3>Навыки</h3>
-                    <ul class="skill-bars">
-                        <li>
-                            <div class="progress percent90">
+        </div>
+    </section>
+
+    <!-- Навыки -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span> Навыки
+            </h2>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>FastAPI</span>
                                 <span>90%</span>
                             </div>
-                            <strong>PYTHON</strong>
-                        </li>
-                        <li>
-                            <div class="progress percent85">
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Django</span>
                                 <span>85%</span>
                             </div>
-                            <strong>GIT</strong>
-                        </li>
-                        <li>
-                            <div class="progress percent70">
-                                <span>70%</span>
-                            </div>
-                            <strong>KAFKA</strong>
-                        </li>
-                        <li>
-                            <div class="progress percent70">
-                                <span>70%</span>
-                            </div>
-                            <strong>FastAPI</strong>
-                        </li>
-                        <li>
-                            <div class="progress percent60">
-                                <span>60%</span>
-                            </div>
-                            <strong>AIOGRAM</strong>
-                        </li>
-                    </ul>
-                    <!-- /skill-bars -->
-                </div>
-            </div>
-            <div class="row button-section">
-                <div class="col-twelve">
-                    <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Найми меня</a>
-                    <a href="https://raw.githubusercontent.com/namig41/namig41.github.io/main/images/CV_Guseinov_Namig.pdf" download="CV_Guseinov_Namig.pdf" target="_blank" title="Download CV" class="button button-primary">Скачать резюме</a>
-                </div>
-            </div>
-        </section>
-        <!-- /process-->
-        <!-- resume Section
-   ================================================== -->
-        <section id="Work" class="grey-section">
-            <div class="row resume-timeline">
-                <div class="col-twelve resume-header">
-                    <h2>Профессиональный опыт</h2>
-                </div>
-                <!-- /resume-header -->
-                <div class="col-twelve">
-                    <div class="timeline-wrap">
-                        <div class="timeline-block">
-                            <div class="timeline-header">
-                                <h3>АО «ФЦНИВТ «СНПО «Элерон»</h3>
-                                <p>Опыт работы включает разработку ПО на С++/Qt под Linux в роли инженера, где выполнялось создание комплексных приложений для управления доступом сотрудников, в том числе бюро пропусков с функциями ввода данных сотрудников, биометрии и управления доступом.</p>
-                            </div>
-                            <div class="timeline-ico">
-                                <i class="fa fa-graduation-cap"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h3>Школа 21</h3>
-                                <p>Проходил обучение в Школе 21, где реализовал несколько проектов на C, включая <a href="https://github.com/namig41/ft_ls">ft_ls</a> и <a href="https://github.com/namig41/printf">printf</a>, демонстрируя навыки работы с низкоуровневым программированием и углубленное понимание системного программирования. </p>
-                            </div>
-							<div class="timeline-ico">
-                                <i class="fa fa-graduation-cap"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h3>Личные проекты</h3>
-                                <p>
-									<a href="https://github.com/namig41/CurrencyExchange">Обмен валют</a> - REST API для управления валютами и обменными курсами. Сервис позволяет просматривать и редактировать списки валют и курсов, а также выполнять конвертацию произвольных сумм из одной валюты в другую.
-								</p>
-                                <p>
-									<a href="https://github.com/namig41/Chat">Чат</a> с использованием FastAPI для API, WebSocket для реального времени, Kafka для обмена сообщениями, и MongoDB для хранения данных. Проект упакован в Docker, а Makefile используется для автоматизации сборки и развертывания.
-								</p>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
                             </div>
                         </div>
-                        <!-- /timeline-block -->
-                    </div>
-                    <!-- /timeline-wrap -->
-                </div>
-                <!-- /col-twelve -->
-            </div>
-            <!-- /resume-timeline -->
-        </section>
-        <!-- /features -->
-        <!-- Portfolio Section
-   ================================================== -->
-        <!-- CTA Section
-   ================================================== -->
-        <!-- services Section
-   ================================================== -->
-        <section id="MORE">
-            <div class="overlay"></div>
-            <div class="row section-intro">
-                <div class="col-twelve">
-                    <h5>Дополнительно</h5>
-                </div>
-            </div>
-            <!-- /section-intro -->
-            <div class="row services-content">
-                <div id="owl-slider" class="owl-carousel services-list">
-                    <div class="service">
-                        <span class="icon">
-                            <i class="icon-window"></i>
-                        </span>
-                        <div class="service-content">
-                            <h3>Операционные системы</h3>
-                            <ul class="desc" style="list-style-type: none;">
-                                <li>Windows</li>
-                                <li>Ubuntu</li>
-                                <li>Debian</li>
-                                <li>AstraLinux</li>
-                            </ul>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Celery</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
                         </div>
                     </div>
-                    <!-- /service -->
-                    <div class="service">
-                        <span class="icon">
-                            <i class="icon-earth"></i>
-                        </span>
-                        <div class="service-content">
-                            <h3>Языки</h3>
-                            <ul class="skill-bars">
-                                <li>
-                                    <div class="progress percent100">
-                                        <span>100%</span>
-                                    </div>
-                                    <strong>Русский</strong>
-                                </li>
-                                <li>
-                                    <div class="progress percent60">
-                                        <span>60%</span>
-                                    </div>
-                                    <strong>Английский</strong>
-                                </li>
-                                <li>
-                                    <div class="progress percent50">
-                                        <span>50%</span>
-                                    </div>
-                                    <strong>Азербайджанский</strong>
-                                </li>
-                            </ul>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-database"></i> Базы данных & Очереди</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PostgreSQL</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Redis</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Kafka</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>RabbitMQ</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
                         </div>
                     </div>
-                    <!-- /services-list -->
-                    <div class="service">
-                        <span class="icon">
-                            <i class="icon-chat"></i>
-                        </span>
-                        <div class="service-content">
-                            <h3>Гибкие навыки</h3>
-                            <ul style="list-style-type: none;">
-                                <li>Коммуникабельность</li>
-                                <li>Умение работать в команде</li>
-                                <li>Адаптивность</li>
-                                <li>Навыки решения проблем</li>
-                            </ul>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Инструменты & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Docker/K8s</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Linux/Unix</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git/CI/CD</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Pytest/SQLAlchemy</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
                         </div>
                     </div>
-                    <!-- /service -->
-                </div>
-                <!-- /services-content -->
-        </section>
-        <!-- /services -->
-        <!-- stats Section
-   ================================================== -->
-        <!-- contact
-   ================================================== -->
-        <section id="contact">
-            <div class="row section-intro">
-                <div class="col-twelve">
-                    <h5>Контакты</h5>
-                    <h1>Свяжитесь со мной</h1>
                 </div>
             </div>
-            <!-- /section-intro -->
-            <div class="row contact-form">
-                <div class="col-twelve">
-                    <!-- form -->
-                    <form id="contactform" action="https://formspree.io/f/mvgoqzpq" method="POST">
-                        <input type="text" name="name" placeholder="Имя">
-                        <input type="email" name="_replyto" placeholder="Почта">
-                        <textarea name="message" placeholder="Сообщение"></textarea>
-                        <input type="submit" value="Отправить">
-                    </form>
-                    <!-- Form End -->
-                    <!-- contact-warning -->
-                    <div id="message-warning"></div>
-                    <!-- contact-success -->
-                    <div id="message-success">
-                        <i class="fa fa-check"></i>Ваше сообщение отправлено, спасибо! <br>
-                    </div>
-                </div>
-                <!-- /col-twelve -->
-            </div>
-            <!-- /contact-form -->
-            <div class="row contact-info">
-                <div class="col-four tab-full">
-                    <div class="icon">
-                        <i class="icon-pin"></i>
-                    </div>
-                    <h5>Адрес</h5>
-                    <p> Метро Домодедовская, улица Шипиловская </p>
-                </div>
-                <div class="col-four tab-full collapse">
-                    <div class="icon">
-                        <i class="icon-mail"></i>
-                    </div>
-                    <h5>Почта</h5>
-                    <p>guseinovnamig41@gmail.com </p>
-                </div>
-                <div class="col-four tab-full">
-                    <div class="icon">
-                        <i class="icon-phone"></i>
-                    </div>
-                    <h5>Телефон</h5>
-                    <p> +7 (985) 355-79-73 </p>
+            <div class="tech-stack">
+                <h3>Технологии, с которыми я работаю</h3>
+                <div class="tech-icons">
+                    <div class="tech-icon" title="Python"><i class="fab fa-python"></i></div>
+                    <div class="tech-icon" title="Docker"><i class="fab fa-docker"></i></div>
+                    <div class="tech-icon" title="Git"><i class="fab fa-git-alt"></i></div>
+                    <div class="tech-icon" title="Linux"><i class="fab fa-linux"></i></div>
+                    <div class="tech-icon" title="PostgreSQL"><i class="fas fa-database"></i></div>
+                    <div class="tech-icon" title="MongoDB"><i class="fas fa-leaf"></i></div>
+                    <div class="tech-icon" title="Redis"><i class="fas fa-bolt"></i></div>
+                    <div class="tech-icon" title="Kafka"><i class="fas fa-inbox"></i></div>
                 </div>
             </div>
-            <!-- /contact-info -->
-        </section>
-        <!-- /contact -->
-        <!-- footer
-   ================================================== -->
-        <footer>
-            <div class="row">
-                <div class="col-six tab-full pull-right social">
-                    <ul class="footer-social">
-                        <li>
-                            <a target="_blank" href="https://hh.ru/applicant/resumes/view?resume=d8e85e5aff0d9834b70039ed1f4b5549383071">
-                                <i class="fa fa-h-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/namig41">
-                                <i class="fa fa-github" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top">
-                        <i class="fa fa-long-arrow-up"></i>
-                    </a>
-                </div>
-            </div>
-            <!-- /row -->
-        </footer>
-        <div id="preloader">
-            <div id="loader"></div>
         </div>
-        <!-- Java Script
-   ================================================== -->
-        <script src="js/jquery-2.1.3.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    </section>
+
+    <!-- Опыт работы -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span> Опыт работы
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>РозумСофт</h3>
+                            <span class="timeline-date">Март 2025 — настоящее время | Senior Разработчик</span>
+                        </div>
+                        <p>Команда: 7 человек. Разработка в методологии Scrum с CI/CD.</p>
+                        <ul class="timeline-list">
+                            <li>Разработал SSO-интеграцию с Keycloak (OAuth 2.0 + PKCE)</li>
+                            <li>Автоматизировал управление Asterisk конфигурацией через AMI</li>
+                            <li>Оптимизировал генерацию конфигурационных файлов Asterisk</li>
+                            <li>Устранил устаревшие зависимости и неэффективные участки кода</li>
+                            <li>Настроил стек ELK для централизованного логирования и мониторинга</li>
+                            <li>Реализовал дашборды в Kibana для анализа инцидентов</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>FastAPI</span>
+                            <span>Kafka</span>
+                            <span>Celery</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>АО «ФЦНИВТ «СНПО «Элерон»</h3>
+                            <span class="timeline-date">Сентябрь 2022 — Март 2025 | Ведущий инженер</span>
+                        </div>
+                        <p>Миграция монолитного приложения на Astra Linux с переходом на микросервисную архитектуру.</p>
+                        <ul class="timeline-list">
+                            <li>Разработал микросервис для аутентификации по биометрическим параметрам руки</li>
+                            <li>Создал микросервис для подписки на события безопасности и управления уведомлениями</li>
+                            <li>Реализовал нейросеть для обработки и верификации биометрических данных</li>
+                            <li>Переписал и оптимизировал legacy code</li>
+                            <li>Устранил устаревшие зависимости и неэффективные участки кода</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>C++/Qt</span>
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>TensorFlow</span>
+                            <span>RabbitMQ</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Neuro-Core</h3>
+                            <span class="timeline-date">Июнь 2021 — Июнь 2022 | Junior Python Developer</span>
+                        </div>
+                        <p>Разработка систем с использованием машинного обучения и ИИ.</p>
+                        <ul class="timeline-list">
+                            <li>Реализовал механизм передачи кадров от камер к моделям ML</li>
+                            <li>Создал автоматизированное решение для извлечения данных с веб-страниц</li>
+                            <li>Структурировал и сохранял данные в БД для последующего анализа</li>
+                            <li>Использовал многопоточность для обработки большого количества запросов</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>FastAPI</span>
+                            <span>Kafka</span>
+                            <span>RabbitMQ</span>
+                            <span>PostgreSQL</span>
+                            <span>Asyncio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Сбербанк-Сервис</h3>
+                            <span class="timeline-date">Июль 2019 — Май 2021 | Junior Developer</span>
+                        </div>
+                        <p>Работа в команде разработки корпоративных решений.</p>
+                        <ul class="timeline-list">
+                            <li>Миграция системы с Flask на FastAPI</li>
+                            <li>Проведение code review для обеспечения качества кода</li>
+                            <li>Создание и оптимизация SQL-запросов</li>
+                            <li>Разработка и поддержка автотестов</li>
+                            <li>Разработка новых фич для улучшения функциональности системы</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>FastAPI</span>
+                            <span>Django</span>
+                            <span>Kafka</span>
+                            <span>Redis</span>
+                            <span>ClickHouse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span> Проекты
+            </h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Проекты загружаются через GitHub API -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/namig41/Chat" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/namig41/Chat" target="_blank" class="project-github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Чат на FastAPI</h3>
+                        <p>Чат с использованием FastAPI для API, WebSocket для реального времени, Kafka для обмена сообщениями, и MongoDB для хранения данных.</p>
+                        <div class="project-tech">
+                            <span>FastAPI</span>
+                            <span>WebSocket</span>
+                            <span>Kafka</span>
+                            <span>MongoDB</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/namig41/CurrencyExchange" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/namig41/CurrencyExchange" target="_blank" class="project-github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Обмен валют</h3>
+                        <p>REST API для управления валютами и обменными курсами. Сервис позволяет просматривать и редактировать списки валют и курсов, а также выполнять конвертацию.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>REST API</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/namig41/ft_ls" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/namig41/ft_ls" target="_blank" class="project-github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>ft_ls</h3>
+                        <p>Реализация утилиты ls на языке C. Проект демонстрирует понимание работы с файловой системой, флагами командной строки и обработкой ошибок.</p>
+                        <div class="project-tech">
+                            <span>C</span>
+                            <span>System API</span>
+                            <span>Unix</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/namig41/printf" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/namig41/printf" target="_blank" class="project-github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>printf</h3>
+                        <p>Собственная реализация функции printf на C. Проект показывает понимание variadic функций, форматирования строк и низкоуровневого программирования.</p>
+                        <div class="project-tech">
+                            <span>C</span>
+                            <span>Variadic Functions</span>
+                            <span>Formatting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-cta">
+                <a href="https://github.com/namig41" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> Больше на GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Дополнительно -->
+    <section class="additional">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span> Дополнительно
+            </h2>
+            <div class="additional-grid">
+                <div class="additional-card">
+                    <div class="additional-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Операционные системы</h3>
+                    <ul>
+                        <li><i class="fab fa-windows"></i> Windows</li>
+                        <li><i class="fab fa-ubuntu"></i> Ubuntu</li>
+                        <li><i class="fab fa-linux"></i> Debian</li>
+                        <li><i class="fas fa-shield-alt"></i> AstraLinux</li>
+                    </ul>
+                </div>
+                <div class="additional-card">
+                    <div class="additional-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Языки</h3>
+                    <div class="language-skills">
+                        <div class="language-item">
+                            <span>Русский</span>
+                            <div class="language-bar">
+                                <div class="language-progress" style="width: 100%"></div>
+                            </div>
+                            <span>100%</span>
+                        </div>
+                        <div class="language-item">
+                            <span>Английский</span>
+                            <div class="language-bar">
+                                <div class="language-progress" style="width: 60%"></div>
+                            </div>
+                            <span>60%</span>
+                        </div>
+                        <div class="language-item">
+                            <span>Азербайджанский</span>
+                            <div class="language-bar">
+                                <div class="language-progress" style="width: 50%"></div>
+                            </div>
+                            <span>50%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="additional-card">
+                    <div class="additional-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Гибкие навыки</h3>
+                    <ul>
+                        <li><i class="fas fa-comments"></i> Коммуникабельность</li>
+                        <li><i class="fas fa-users"></i> Работа в команде</li>
+                        <li><i class="fas fa-sync-alt"></i> Адаптивность</li>
+                        <li><i class="fas fa-puzzle-piece"></i> Решение проблем</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">06.</span> Контакты
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Свяжитесь со мной</h3>
+                    <p>Я открыт для новых возможностей и интересных проектов. Не стесняйтесь писать!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:guseinovnamig41@gmail.com">guseinovnamig41@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+79853557973">+7 (985) 355-79-73</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Москва, м. Домодедовская</span>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/namig41" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://hh.ru/applicant/resumes/view?resume=d8e85e5aff0d9834b70039ed1f4b5549383071" target="_blank"><i class="fas fa-briefcase"></i></a>
+                        <a href="mailto:guseinovnamig41@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" action="https://formspree.io/f/mvgoqzpq" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="_replyto" placeholder="Ваш Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Сообщение" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Гусейнов Намиг. Все права защищены.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/namig41" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://hh.ru/applicant/resumes/view?resume=d8e85e5aff0d9834b70039ed1f4b5549383071" target="_blank"><i class="fas fa-briefcase"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка наверх -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
